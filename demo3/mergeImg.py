@@ -1,5 +1,6 @@
 # https://blog.csdn.net/guduruyu/article/details/71439733
 # https://www.cnblogs.com/lilinwei340/p/6474170.html
+# https://stackoverflow.com/questions/37941648/unable-to-crop-away-transparency-neither-pil-getbbox-nor-numpy-are-working
 from PIL import Image
 from PIL import ImageChops
 import numpy as np
