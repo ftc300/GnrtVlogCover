@@ -38,13 +38,10 @@ def resizePic(img):
     return resized
 
 def runResize():
-    starter = parse_start()
-    file_cound = len(os.listdir(_RAW_DIR))
-    for index in range(starter, starter + file_cound):
-        this_name = _RAW_DIR+'/pic%03d.png' %index
-        with Image.open(this_name) as img:
+    for file in os.listdir(_RAW_DIR):
+        print(file)
+        with Image.open(_RAW_DIR + file) as img:
             _small = resizePic(img)
-            _small.save("../resize-raw/pic%03d_resize.png"%index, format="png")
-
+            _small.save("../resize-raw/%s_resize.png"%str(file.split(".")[0]), format="png")
 if __name__ == "__main__":
     runResize()
