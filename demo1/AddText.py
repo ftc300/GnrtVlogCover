@@ -17,6 +17,7 @@ draw = ImageDraw.Draw(im1)
 print(font.getsize(strs))
 draw.text((x, y), strs, (255, 255, 0), font=font)  # 设置位置坐标 文字 颜色 字体
 # prefix = str(int(time.time()))
+im1.show()
 im1.save("../text-raw/pic001_text.png", format="png")
 del draw
 im1.close()

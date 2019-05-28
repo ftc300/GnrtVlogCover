@@ -1,0 +1,25 @@
+raw:
+ inputBgPath: img/
+ outImgPath: img/output
+ removeBgPath: img/removebg
+blur:
+  radius: 5
+removeBg:
+  apiKey: uLUKsbfqwbfWvZekocsq4jUf
+
+text:
+  - content: 权力的游戏 \n GAME OF THRONES
+    textSize: 60
+    fontPath: font/Paris.ttf
+    postion: 0,0
+
+    fillcolor: green
+    shadowcolor: yellow
+    boder: 2
+  - content2: 进击的二丫@Arya
+    textSize:  60
+    fontPath: font/Paris.ttf
+    postion: 0,0
+    fillcolor: green
+    shadowcolor: yellow
+    boder: 2
