@@ -37,21 +37,3 @@ def addTextBorder(draw, x, y, r, text, font, textcolor, shadowcolor):
     draw.text((x - r, y + r), text, font=font, fill=shadowcolor)
     draw.text((x + r, y + r), text, font=font, fill=shadowcolor)
     draw.text((x, y), text, fill=textcolor, font=font)
-
-font = "Paris.ttf"
-font_size = 100
-content = u"  权力的游戏 \nGame Of Thrones"
-r = 3
-angle = 0
-x = 300
-y = 600
-outPath = "txt.png"
-textcolor = "red"
-shadowcolor = "white"
-saveTextImg( x, y, r, content, font,textcolor, shadowcolor,angle,outPath)
-path1 = "../gaus-raw/pic004_gaus.png"
-img1 = Image.open(path1, 'r')
-img1 = img1.convert('RGBA')
-img2 = Image.open(outPath, 'r')
-img2 = img2.convert('RGBA')
-mergeImages(img2, img1, 0, 0)

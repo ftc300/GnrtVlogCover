@@ -1,6 +1,6 @@
 import requests
 from PIL import Image, ImageFont, ImageFilter, ImageDraw, ImageOps
-
+import CoverText
 
 def resizePic(img):
     # make sure the cut in the near middle of the img
@@ -68,6 +68,8 @@ def mergeImages(img1, img2 , x,y):
     target.paste(img1, (x,y), img1)  # 第一个参数表示需要粘贴的图像，中间的是坐标，最后是一个是mask图片，用于指定透明区域，将底图显示出来。
     target.rotate(30)
     target.show()
+
+
 
 
 
