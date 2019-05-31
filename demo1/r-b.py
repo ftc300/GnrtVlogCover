@@ -13,7 +13,7 @@ def mergeImages(img1, img2, x, y):
     target.show()
 
 
-def saveTextImg( x, y, r, content, font,textcolor, shadowcolor,angle,outPath):
+def saveTextImg( x, y, r, content, font_size,font,textcolor, shadowcolor,angle,outPath):
     font = ImageFont.truetype(font, font_size)
     img_1 = Image.new("RGBA", (1280, 800), (0, 0, 0, 0))
     w, h = ImageDraw.Draw(img_1).textsize(content, font)
@@ -48,7 +48,7 @@ y = 600
 outPath = "txt.png"
 textcolor = "red"
 shadowcolor = "white"
-saveTextImg( x, y, r, content, font,textcolor, shadowcolor,angle,outPath)
+saveTextImg( x, y, r, content, font,font_size,textcolor, shadowcolor,angle,outPath)
 path1 = "../gaus-raw/pic004_gaus.png"
 img1 = Image.open(path1, 'r')
 img1 = img1.convert('RGBA')

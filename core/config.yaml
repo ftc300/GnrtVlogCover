@@ -1,25 +1,41 @@
-raw:
- inputBgPath: img/
- outImgPath: img/output
- removeBgPath: img/removebg
-blur:
-  radius: 5
-removeBg:
-  apiKey: uLUKsbfqwbfWvZekocsq4jUf
+inBackgroundImg: img/raw/background.png
+inFocusImg: img/raw/focus.png
+apiKey: uLUKsbfqwbfWvZekocsq4jUf
+blurR: 3
+outputFile: img/output/
+decoration:
+  - img: img/raw/crown.png
+    x: 1000
+    y: 0
+  - img: img/raw/wolf.png
+    x: 0
+    y: 0
 
 text:
-  - content: 权力的游戏 \n GAME OF THRONES
-    textSize: 60
-    fontPath: font/Paris.ttf
-    postion: 0,0
-
-    fillcolor: green
-    shadowcolor: yellow
-    boder: 2
-  - content2: 进击的二丫@Arya
-    textSize:  60
-    fontPath: font/Paris.ttf
-    postion: 0,0
-    fillcolor: green
-    shadowcolor: yellow
-    boder: 2
+  - content: 绿先知#
+    font_size:  100
+    font: font/Paris.ttf
+    x: 0
+    y: 0
+    angle: -20
+    textcolor: green
+    shadowcolor: white
+    r: 2
+  - content: Skinchanger#
+    font_size:  100
+    font: font/Paris.ttf
+    x: 100
+    y: 300
+    angle: 0
+    textcolor: red
+    shadowcolor: white
+    r: 3
+  - content: 躺赢Boy#
+    font_size:  120
+    font: font/Paris.ttf
+    x: 250
+    y: 300
+    angle: 20
+    textcolor: orange
+    shadowcolor: black
+    r: 2
